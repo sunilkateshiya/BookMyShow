@@ -12,6 +12,11 @@
 		4C48997A1ECAD6FD00BA4420 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4899781ECAD6FD00BA4420 /* Main.storyboard */; };
 		4C48997C1ECAD6FD00BA4420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C48997B1ECAD6FD00BA4420 /* Assets.xcassets */; };
 		4C48997F1ECAD6FD00BA4420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C48997D1ECAD6FD00BA4420 /* LaunchScreen.storyboard */; };
+		4C4899871ECAFC3300BA4420 /* MoviePosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4899861ECAFC3300BA4420 /* MoviePosterCell.swift */; };
+		4C4899891ECB01BB00BA4420 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4899881ECB01BB00BA4420 /* Events.swift */; };
+		4C48998B1ECB057D00BA4420 /* BookMyShowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C48998A1ECB057D00BA4420 /* BookMyShowManager.swift */; };
+		4C48998D1ECB128900BA4420 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C48998C1ECB128900BA4420 /* EventDetailsViewController.swift */; };
+		A850952075F8B4BD135B5461 /* Pods_BookMyShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57CEBAC5EECF3BF0348DD67 /* Pods_BookMyShow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		4C48997B1ECAD6FD00BA4420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C48997E1ECAD6FD00BA4420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C4899801ECAD6FD00BA4420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C4899861ECAFC3300BA4420 /* MoviePosterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePosterCell.swift; sourceTree = "<group>"; };
+		4C4899881ECB01BB00BA4420 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		4C48998A1ECB057D00BA4420 /* BookMyShowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookMyShowManager.swift; sourceTree = "<group>"; };
+		4C48998C1ECB128900BA4420 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		A57CEBAC5EECF3BF0348DD67 /* Pods_BookMyShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookMyShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF04445CDA56A449ED8EDBC0 /* Pods-BookMyShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMyShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookMyShow/Pods-BookMyShow.release.xcconfig"; sourceTree = "<group>"; };
+		F411F7776EE3AEEA7596A48C /* Pods-BookMyShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMyShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookMyShow/Pods-BookMyShow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A850952075F8B4BD135B5461 /* Pods_BookMyShow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D4D2CBBEB3E10173DF56B9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F411F7776EE3AEEA7596A48C /* Pods-BookMyShow.debug.xcconfig */,
+				CF04445CDA56A449ED8EDBC0 /* Pods-BookMyShow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4C4899681ECAD6FD00BA4420 = {
 			isa = PBXGroup;
 			children = (
 				4C4899731ECAD6FD00BA4420 /* BookMyShow */,
 				4C4899721ECAD6FD00BA4420 /* Products */,
+				2D4D2CBBEB3E10173DF56B9B /* Pods */,
+				BC0D8464AC7286E04241EA5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				4C4899741ECAD6FD00BA4420 /* AppDelegate.swift */,
+				4C4899861ECAFC3300BA4420 /* MoviePosterCell.swift */,
+				4C48998C1ECB128900BA4420 /* EventDetailsViewController.swift */,
+				4C48998A1ECB057D00BA4420 /* BookMyShowManager.swift */,
+				4C4899881ECB01BB00BA4420 /* Events.swift */,
 				4C4899761ECAD6FD00BA4420 /* ViewController.swift */,
 				4C4899781ECAD6FD00BA4420 /* Main.storyboard */,
 				4C48997B1ECAD6FD00BA4420 /* Assets.xcassets */,
@@ -64,6 +92,14 @@
 			path = BookMyShow;
 			sourceTree = "<group>";
 		};
+		BC0D8464AC7286E04241EA5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A57CEBAC5EECF3BF0348DD67 /* Pods_BookMyShow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C4899831ECAD6FD00BA4420 /* Build configuration list for PBXNativeTarget "BookMyShow" */;
 			buildPhases = (
+				CA9A1F977CAD08E06B73C155 /* [CP] Check Pods Manifest.lock */,
 				4C48996D1ECAD6FD00BA4420 /* Sources */,
 				4C48996E1ECAD6FD00BA4420 /* Frameworks */,
 				4C48996F1ECAD6FD00BA4420 /* Resources */,
+				E0E83E2B38FA223E80A181F9 /* [CP] Embed Pods Frameworks */,
+				33E1C13E221192163DFDAAC6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +170,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33E1C13E221192163DFDAAC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookMyShow/Pods-BookMyShow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA9A1F977CAD08E06B73C155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0E83E2B38FA223E80A181F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookMyShow/Pods-BookMyShow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C48996D1ECAD6FD00BA4420 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C48998D1ECB128900BA4420 /* EventDetailsViewController.swift in Sources */,
+				4C4899871ECAFC3300BA4420 /* MoviePosterCell.swift in Sources */,
+				4C4899891ECB01BB00BA4420 /* Events.swift in Sources */,
+				4C48998B1ECB057D00BA4420 /* BookMyShowManager.swift in Sources */,
 				4C4899771ECAD6FD00BA4420 /* ViewController.swift in Sources */,
 				4C4899751ECAD6FD00BA4420 /* AppDelegate.swift in Sources */,
 			);
@@ -258,6 +349,7 @@
 		};
 		4C4899841ECAD6FD00BA4420 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F411F7776EE3AEEA7596A48C /* Pods-BookMyShow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookMyShow/Info.plist;
@@ -270,6 +362,7 @@
 		};
 		4C4899851ECAD6FD00BA4420 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF04445CDA56A449ED8EDBC0 /* Pods-BookMyShow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BookMyShow/Info.plist;
@@ -299,6 +392,7 @@
 				4C4899851ECAD6FD00BA4420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
